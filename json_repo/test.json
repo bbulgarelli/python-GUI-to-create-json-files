@@ -1,0 +1,38 @@
+{
+  "Capítulo 0": {
+    "Boas-vindas": {
+        "Bem-vindo":{
+          "text": "Olá, seja bem-vindo a Petrópolis"
+        },
+        "Quantos anos?": {
+          "text": "Quantos anos você tem?"
+        }
+    },
+    "Despedida": {
+        "Foi um prazer": {
+          "text": "Foi um prazer conhecê-lo"
+        },
+        "Tchau": {
+          "text": "Tchau, até outro dia!"
+        }
+    }
+  },
+  "Capítulo 1": {
+    "Boas-vindas de novo": {
+        "Bem-vindo mais uma vez":{
+          "text": "Olá, você por aqui de novo?"
+        },
+        "Esqueci sua idade": {
+          "text": "Esqueci sua idade, rs, desculpa"
+        }
+    },
+    "Despedida novamente": {
+        "Eu te odeio": {
+          "text": "Eu te odeio com todas as minhas forças!"
+        },
+        "Vá embora": {
+          "text": "Vá embora antes que eu chame a polícia!"
+        }
+    }
+  }
+}

@@ -42,8 +42,3 @@ def cuida_item_selecionado(evento):
 frame_teste = cria_frame_de_navegacao_em_pastas("../")
 frame_teste.pack()
 root.mainloop()
-
-with open('test.json') as json_file:
-    data = json.load(json_file)
-    for p in data:
-        print("Texto: ", data['Capitulo1']['Boas-vindas']['Bem-vindo']['Texto'])
