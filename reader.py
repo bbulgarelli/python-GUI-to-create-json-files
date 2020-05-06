@@ -1,12 +1,14 @@
 import json
 
 #carrega o arquivo .json selecionado e armazena o objeto na variável data
-with open('./json_repo/test.json') as test_file:
-    data = json.load(test_file)
+def get_file(filePath):
+    with open(filePath) as json_file:
+        data = json.load(json_file)
+        return data
 
 #navega pelos objetos para se chegar a cada fala possível
 def seleciona_texto():
-    actualPath = data
+    actualPath = get_file('./json_repo/test.json')
 
     print("Selecione o capítulo:")
     print_list(actualPath) #imprime as opções de capítulo disponível no arquivo json
@@ -48,4 +50,12 @@ def print_list(path):
         i += 1
     return
 
+def get_object_list(filePath, *args):
+    source = get_file(filePath)
+    for arg in args:
+        source = source[arg]
+    return list(source.keys())
+
+lista = get_object_list('./json_repo/test.json', "Capítulo 0", "Despedida", "Tchau")
+print(lista)
 seleciona_texto()
